@@ -1,0 +1,24 @@
+{
+	"name": "modules/bug-report",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Modules\\BugReport\\": "src/",
+			"Modules\\BugReport\\Tests\\": "tests/",
+			"Modules\\BugReport\\Database\\Factories\\": "database/factories/",
+			"Modules\\BugReport\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Modules\\BugReport\\Providers\\BugReportServiceProvider"
+			]
+		}
+	}
+}
