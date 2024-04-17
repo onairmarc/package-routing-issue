@@ -17,4 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+// Uncomment the next line to register the Bug Report module routes via require instead of via framework.
+// require base_path('app_modules/bug-report/routes/web.php');
+
+require __DIR__ . '/auth.php';
