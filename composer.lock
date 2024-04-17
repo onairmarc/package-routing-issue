@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b65d4f726e574a09dcf45f6af8e8106",
+    "content-hash": "e6d444f3f8f6bad88ed445403c66cddf",
     "packages": [
         {
             "name": "brick/math",
@@ -2595,6 +2595,38 @@
                 }
             ],
             "time": "2024-01-28T23:22:08+00:00"
+        },
+        {
+            "name": "modules/bug-report",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "app_modules/bug-report",
+                "reference": "3db1ece6ed8942e67b80ccc4c58338de756608dc"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Modules\\BugReport\\Providers\\BugReportServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Modules\\BugReport\\": "src/",
+                    "Modules\\BugReport\\Tests\\": "tests/",
+                    "Modules\\BugReport\\Database\\Factories\\": "database/factories/",
+                    "Modules\\BugReport\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "monolog/monolog",
